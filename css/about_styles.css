@@ -1,0 +1,116 @@
+* { box-sizing: border-box; }
+
+body {
+	padding-top: 80px;
+}
+
+.nav {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	margin: 0 auto;
+	padding: 20px 140px 20px;
+}
+
+.nav ul {
+  margin: 0 auto;
+	float: right;
+}
+
+.nav li a {
+	color: #ff0;
+}
+
+.nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 10px;
+	letter-spacing: 0.1em;
+}
+
+.nav ul li a {
+	color: #fff;
+}
+
+.nav a:hover {
+  color: red;
+  text-decoration: none;
+  -webkit-transition: color 1s;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.image {
+  display: inline-block;
+}
+
+.image img {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.column {
+	display: inline-block;
+	padding: 10px;
+	width: 33%;
+	float: left;
+	text-align: justify;
+}
+
+.main-text {
+	clear: both;
+	padding: 60px 10px 10px 10px;
+	text-align: justify;
+}
+
+.skills {
+	padding: 0px 0px 0px 10px;
+	margin-top: 20px;
+}
+
+.skills h3 {
+	padding-top: 10px;
+	margin-top: 0px;
+}
+
+#skill-list {
+  margin-left: -10px;
+}
+
+/*Typography*/
+
+h1,
+h2,
+h3 {
+	font-weight: 900;
+  font-family: 'Muli', Arial, sans-serif;
+}
+
+body {
+  background-color: #fffeea;
+  color: #34495e;
+}
+
+p,
+li {
+	font-family: 'Muli', Arial, sans-serif;
+}
+
+.intro h3 {
+	text-align: center;
+}
+
+.skills h3 {
+	text-align: center;
+}
+
+
+
