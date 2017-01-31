@@ -1,0 +1,65 @@
+body {
+	background-color: lightgrey;
+}
+
+.calculator {
+	max-width: 320px;
+	margin: 20px;
+	padding: 5px;
+	background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.row {
+	max-width: 320px;
+	max-height: 50px;
+	margin: 2px;
+	display: flex;
+}
+
+.screen {
+	width: 320px;
+	height: 50px;
+	text-align: right;
+	position: relative;
+	display: inline-block;
+	margin: 2px;
+	border-radius: 5px;
+	font-size: 30px;
+}
+
+.button,
+.equal-button {
+	width: 75px;
+	height: 50px;
+	margin: 2px;
+	position: relative;
+	background: linear-gradient(300deg, transparent, green);
+	border-radius: 5px;
+	text-align: center;
+	font-size: 30px;
+	display: flex;
+  flex-wrap: wrap; /* optional. only if you want the items to wrap */
+  justify-content: center; /* for horizontal alignment */
+  align-items: center;
+}
+
+.button:hover,
+.equal-button:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.button:active,
+.equal-button:active {
+	background-color: red;
+}
+
+.number {
+	position: relative;
+}
+
+body {
+	font-family: 'Muli', Arial, sans-serif;
+}

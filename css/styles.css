@@ -96,6 +96,7 @@ body {
 	width: 100%;
 	background-size: cover;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .header {
@@ -103,7 +104,7 @@ body {
 }
 
 #content {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
   padding-top: 80px;
 }
@@ -174,10 +175,6 @@ body {
   opacity: 1;
 }
 
-#me {
-
-}
-
 .carousel h3 {
 	color: white;
 	font-size: 30px;
@@ -218,7 +215,7 @@ body {
 	}
 }
 
-/*Projects**/
+/*Projects*/
 
 #projects {
   background-image: url("../img/free-stock-photos-0022.jpg");
