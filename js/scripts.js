@@ -72,10 +72,23 @@ $(document).ready(function(){
     $(".navbar-collapse").collapse('hide');
     });
 
+  // Projects Carousel
+  $('.carousel').carousel({
+    interval: 10000
+  });
+
+  //Textillate
+  $('.hello').text('&#60;greetings&#47;&#62;').textillate({
+    initialDelay: 800,
+    in: {
+      delay: 100
+    }
+  });
+
 
   // Smooth scrolling
   var $root = $('html, body');
-  $('.navbar-nav a').click(function() {
+  $('.navbar-nav a, .btn').click(function() {
       var href = $.attr(this, 'href');
       $root.animate({
           scrollTop: $(href).offset().top
@@ -94,7 +107,36 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
   });
 
-  //textarea background
+  //FormSpree
+  $("#message-form").validate({
+  submitHandler: function(form) {
+    $.ajax({
+      url: "//formspree.io/xavier@adkicker.io", 
+      method: "POST",
+      data: {
+        name: $("#username").val(),
+        email: $("#email").val(),
+        message: $("#messagebox").val()
+      },
+      dataType: "json",
+      success: function() {
+        $("#submit-success").fadeIn();
+        $("#message-form").fadeOut();
+        $("#sender").html("Thank you "+$("#username").val()+"!"); 
+      },
+      error: function() {
+        $("#submit-errors").fadeIn();
+        $("#sender").html("Thank you "+$("#username").val()+"!");      
+      }
+    });
+    }
+  });
+
+
+
+
+
+/*  //textarea background
   $('#message-submit').on('click', function() {
     var MessageBox = $('#messagebox').val();
     if (MessageBox === "") {
@@ -105,9 +147,9 @@ $(document).ready(function(){
       $('#message-form').hide();
     };
     console.log(MessageBox);
-    return false;
+    //return false;
     // no code here!
-  });
+  });*/
 
   $("#messagebox").on("keyup", function() {
     console.log("keyup happened"); //here we make sure we're catching the keyup
@@ -118,7 +160,7 @@ $(document).ready(function(){
       $('#char-count').css("color", "red");
     }
     else {
-      $('#char-count').css("color", "black");
+      $('#char-count').css("color", "white");
     };
     console.log(charCount);     
   });

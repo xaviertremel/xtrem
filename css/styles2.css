@@ -1,0 +1,362 @@
+/*Index CSS*/
+
+* { box-sizing: border-box; }
+
+body {
+	background-color: black;
+	background-size: auto;
+	position: relative;
+}
+
+/*Navbar*/
+
+.navbar {
+	background: transparent;
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	top: 0;
+	margin: 0 auto;
+	border: 1px;
+	padding: 5px 140px 20px;
+}
+
+.navbar ul {
+  margin: 0 auto;
+	float: right;
+	padding: 0px;
+}
+
+.navbar ul li {
+	color: white;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 10px;
+	letter-spacing: 0.2em;
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  -webkit-transition: color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  -webkit-transition: color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+@media (max-width: 1000px) {
+	.navbar {
+		padding: 5px 20px 20px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.navbar {
+		background: transparent;
+		height: 50px;
+		padding: 10px;
+		float: left;
+	}
+
+	.navbar-header {
+		float: left;
+		border: 0;
+	}
+
+	.navbar ul li {
+		display: inline;
+		padding: 0px;
+		letter-spacing: 0.1em;
+	}
+
+	.navbar-collapse {
+		background: transparent;
+		max-width: 150px;
+		border: 0;
+	}
+}
+
+/*Main CSS*/
+
+.container {
+	background: url("../img/qyftkpfqzv4-wil-stewart.jpg");
+	min-height: 800px;
+	width: 100%;
+	background-size: cover;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.header {
+  text-align: center;
+}
+
+#content {
+	width: 85%;
+	margin: 0 auto;
+  padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+	#content {
+		width: 85%;
+  	padding-top: 0px;
+	}	
+}
+
+.btn {
+	background-color: #434649;
+	border: 0;
+	color: white;
+}
+
+.first-button {
+	margin-top: 250px;
+}
+
+@media (max-width: 767px) {
+	.first-button {
+		margin-top: 200px;
+	}
+}
+
+.tooltip {
+	transition: all 300ms ease-in-out;
+}
+
+.tooltip.right .tooltip-arrow {
+	border-right-color: white;
+}
+
+.tooltip.top .tooltip-arrow {
+	border-top-color: white;
+}
+
+.tooltip-inner {
+	background-color: white;
+	color: black;
+}
+
+/* Home */
+
+.home-container {
+	width: 80%;
+  margin: 0 auto;
+}
+
+#home {
+	width: 80%;
+	margin: 0 auto;
+  padding: 0;
+}
+
+/*Projects*/
+
+#content-project {
+	margin: 0 auto;
+  padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+	#content-project {
+  	padding-top: 0px;
+	}	
+}
+
+#projects {
+	background: black;
+  opacity: 0.9;
+}
+
+.img-rounded:hover {
+	opacity: 0.7;
+}
+
+/*Carousel*/
+
+#carousel-example-generic {
+	margin-top: 40px;
+}
+
+.item {
+	margin: 20px 150px 0px 150px;
+}
+
+.carousel-indicators {
+	margin-bottom: -70px;
+}
+
+@media (max-width: 767px) {
+	.carousel-control {
+	}
+
+	.item {
+		margin: 20px 0px 0px 0px;
+	}
+}
+
+/*About me*/
+
+#about {
+  /*background: url("../img/qyftkpfqzv4-wil-stewart-stars.jpg");*/
+  background: linear-gradient(-140deg, #434649, black);
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+
+
+.learn-more {
+	text-align: left;
+	float: left;
+}
+
+#modalembed {
+	height: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+.label {
+	font-size: 15px;
+}
+
+/*Contact*/
+
+#contact {
+  background: black;
+}
+
+.form-control {
+	max-width: 350px;
+	margin: 5px;
+}
+
+.btn-message {
+	margin: 5px;
+}
+
+#map {
+	width: 320px;
+	height: 230px;
+}
+
+#char-count {
+	margin: 5px;
+}
+
+
+label {
+	margin-left: 5px;
+}
+
+/*FAQ*/
+
+#faq {
+  background: url("../img/qyftkpfqzv4-wil-stewart-stars.jpg");
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+
+.panel {
+	background-color: white;
+}
+
+.panel-heading {
+	background-color: black;
+}
+
+.panel-body {
+	color: black;
+}
+
+/*Footer*/
+
+.footer {
+	width: 80%;
+	position: absolute;
+	bottom: 0;
+	padding-top: 150px;
+	padding-bottom: 10px;
+}
+
+#copyright {
+	text-align: left;
+	padding: 5px;
+}
+
+#facebook {
+	text-align: center;
+	padding: 5px;
+}
+
+#twitter {
+	text-align: right;
+	padding: 5px;
+}
+
+@media (max-width: 1000px) {
+	.footer {
+		padding-top: 50px;
+	}
+
+	#copyright,
+	#twitter {
+		text-align: center;
+	}
+}
+
+/*Typography*/
+
+body {
+	color: white;
+	font-family: 'Muli', Arial, sans-serif;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #434649;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.hello {
+	font-size: 70px;
+	color: white;
+	margin-top: 200px;
+}
+
+@media (max-width: 767px) {
+	.hello {
+		font-size: 50px;
+	}
+}
+
+
+h1,
+h2,
+h3 {
+	font-weight: 900;
+  font-family: 'Muli', Arial, sans-serif;
+}
+
+p,
+li {
+	font-family: 'Muli', Arial, sans-serif;
+}
